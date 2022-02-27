@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Flamenco&display=swap");
+
+@font-face {
+  font-family: "Flame-Bold";
+  src: url("./fonts/Flame-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Flame-Regular";
+  src: url("./fonts/Flame-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FlameSans-Regular";
+  src: url("./fonts/FlameSans-Regular.ttf") format("truetype");
+}
+
+/* GLobal styles Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* GLobal styles End */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background: #f5ebdc;
+  font-family: Flame-Regular;
+}
+
+/* Nav Bar Starts */
+
+.nav-container {
+  background: #f5ebdc;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  overflow-y: hidden;
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 75px;
+  width: 50%;
+  margin-left: 40px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #502314;
+
+  font-family: "flame-regular";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.35s;
+}
+
+.nav-container i {
+  padding-left: 5px;
+  margin-top: -3px;
+  scale: 0.7;
+}
+
+.nav-container li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.nav-container a:hover {
+  color: #d62300;
+}
+
+.icon-design {
+  position: fixed;
+  background: #f5ebdc;
+  top: 45px;
+  left: calc(50% - 50px);
+  height: 50px;
+  width: 100px;
+  border-radius: 0% 0% 50% 50%;
+  z-index: 0;
+}
+
+.icon {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 35px);
+  z-index: 1;
+
+  /* background: #f5ebdc;
+    padding: 0 20px 10px 20px;
+    margin-left: -20px;
+    border: 1px solid red;
+    border-radius: 0% 0% 60% 60%; */
+}
+
+/* Nav Bar Ends */
+
+/* Hero Section Starts */
+
+.hero {
+  background: #d62300;
+  height: 70vh;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+  overflow: hidden;
+}
+
+.text {
+  font-family: Flame-bold;
+  font-size: 100px;
+  color: #f5ebdc;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  color: #d62300;
+  font-size: 24px;
+  font-family: Flame-Regular;
+  text-transform: capitalize;
+  width: 300px;
+  padding: 15px 40px 15px 40px;
+  border-radius: 100px;
+  text-align: center;
+  margin-top: 50px;
+  background: #f5ebdc;
+}
+.hero-img img {
+  height: 50%;
+  width: 30%;
+
+  position: absolute;
+  right: -80px;
+  top: 20%;
+}
+
+/* Hero Section Ends */
+
+/* Covid Section Start */
+
+.covid {
+  background: #502314;
+  height: 20vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.covid p {
+  font-family: Flame-Regular;
+  color: #f5ebdc;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.covid a {
+  color: #f5ebdc;
+  font-size: 24px;
+  font-family: Flame-Regular;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.covid i {
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.covid a:hover {
+  border-bottom: 1px solid #f5ebdc;
+}
+
+/* Covid Section End */
+
+/* Menu Section Start */
+
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* padding: 40px; */
+  border: 1px solid red;
+  width: 70%;
+  margin: 100px auto;
+  /* border: 2px solid red; */
+  gap: 25px;
+}
+
+.menu-items {
+  color: #f5ebdc;
+  border-radius: 20px;
+  padding: 40px;
+
+  position: relative;
+  z-index: -1;
+}
+
+.menu-items h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: flame-bold;
+}
+
+.menu-items img {
+  max-width: 100%;
+}
+
+.item1 {
+  background: #fec23b;
+}
+
+.item2 {
+  background: #30894b;
+}
+
+.item3 {
+  background: #d62300;
+}
+
+.item3 img {
+  scale: 1.2;
+}
+
+.item4 {
+  background: #ffaa00;
+}
+
+.item4 img {
+  scale: 1.2;
+}
+
+.btn2 {
+  background: #f5ebdc;
+  color: #d62300;
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 40px;
+
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.menu-items .btn2:hover {
+  background: #fdd1c0;
+  color: red;
+}
+
+/* Menu Section End */
